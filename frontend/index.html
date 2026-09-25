@@ -1,46 +1,49 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>index.html</title>
-     <link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
   <body>
-    <a href="index.html"><strong>TaskFlow</strong></a>
-  
-    <span style="float: Right">
-      <a href="dashboard.html">Home</a>
-      <a href="login.html">Login</a>
-      <a href="signup.html">Sign Up</a>
-    </span>
- 
-    <main>
-       <div class="hero"></div>
-       <h1>Organize Your Tasks. <span>Get More Done.</span></h1>
-       <p>TaskFlow helps you create you to create, Organize and track your daily task in one
+    <header>
+     <h2 class="taskflow">TaskFlow</h2>
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="login.html">login</a>
+        <a href="signup.html">sign Up</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Your Task Simplified. <br><span style="color: blue;">Your Goals Achieved with Ease</span></h1>
+        <p style="color: rgb(25, 25, 55) ;">
+          Taskflow brings clarity to you workflow through planning, so you can focus
+          on the most important.
         </p>
-  <button class="btn">Get Started</button>
-  <div class="wave"></div> <!-- THIS IS THE WAVE -->
-     
-     
-     
+        <a href="signup.html" class="get-started">Get Started</a>
+      </div>
+    </section>
+    <div class="why-taskflow">
+      <h3>Why Choose Taskflow</h3>
       <ul>
         <li>
-          <strong>Create Tasks</strong><br />Quickly add the things you need to
-          do.
+          <strong>Manages Task</strong><br />Create and organize task with due
+          dates.
         </li>
         <li>
-          <strong>Track Progress</strong><br />Know what is pending and what
-          completed.
+          <strong>Team Collaboration</strong><br />Shares projects,tracks progress
+          and promote team work.
         </li>
         <li>
-          <strong>Stay Organised</strong><br />Keep all your task in one place.
+          <strong>Reminders</strong><br />Gets instant notifications and task
+          updates.
         </li>
       </ul>
-    </main>
-    <footer>
-      <p>
-        &copy;; 2026 TaskFlow. All right Reserved By<strong> Mr.Can-Do.</strong>
-      </p>
-    </footer>
+    </div>
+
+    <footer>&copy;Taskflow. All rights Reserved.</footer>
   </body>
 </html>
