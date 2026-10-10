@@ -4,46 +4,80 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing</title>
-    <link rel="stylesheet" href="style.css">
+    <!--link rel="stylesheet" href="style.css"-->
+    <link rel="stylesheet" href="./output.css" />
   </head>
   <body>
-    <header>
-     <h2 class="taskflow">TaskFlow</h2>
-      <nav>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="index.html" class="active">Home</a>
-        <a href="login.html">login</a>
-        <a href="signup.html">sign Up</a>
-      </nav>
-    </header>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Your Task Simplified. <br><span style="color: blue;">Your Goals Achieved with Ease</span></h1>
-        <p style="color: rgb(25, 25, 55) ;">
-          Taskflow brings clarity to you workflow through planning, so you can focus
-          on the most important.
-        </p>
-        <a href="signup.html" class="get-started">Get Started</a>
-      </div>
-    </section>
-    <div class="why-taskflow">
-      <h3>Why Choose Taskflow</h3>
-      <ul>
-        <li>
-          <strong>Manages Task</strong><br />Create and organize task with due
-          dates.
-        </li>
-        <li>
-          <strong>Team Collaboration</strong><br />Shares projects,tracks progress
-          and promote team work.
-        </li>
-        <li>
-          <strong>Reminders</strong><br />Gets instant notifications and task
-          updates.
-        </li>
-      </ul>
-    </div>
+    <body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col justify-between">
 
-    <footer>&copy;Taskflow. All rights Reserved.</footer>
-  </body>
+    <!-- Top Navigation Bar -->
+    <header class="w-full bg-[#EAF2FC] border-b border-blue-100 py-4 px-8 flex items-center justify-between shadow-sm">
+        <!-- Logo -->
+        <div class="text-blue-700 font-bold text-xl tracking-tight">
+            TaskFlow
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="flex items-center space-x-8 text-sm font-medium text-gray-700">
+            <a href="#" class="hover:text-blue-700 transition">Dashboard</a>
+            <div class="flex flex-col items-center">
+                <a href="#" class="text-blue-800 font-semibold">Home</a>
+                <span class="w-full h-0.5 bg-blue-800 rounded-full mt-0.5"></span>
+            </div>
+            <a href="#" class="hover:text-blue-700 transition">login</a>
+            <a href="#" class="hover:text-blue-700 transition">sign Up</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="flex-grow">
+        <!-- Hero Banner Section -->
+        <section class="w-full bg-gradient-to-r from-[#dff0fe] via-[#cce7fd] to-[#b8ddfc] py-16 px-8 text-center border-b border-blue-100 shadow-inner">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">
+                Your Task Simplified.
+            </h1>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-700 mt-2 tracking-tight">
+                Your Goals Achieved with Ease
+            </h2>
+        </section>
+
+        <!-- Body / Features Content Section -->
+        <div class="max-w-4xl mx-auto px-6 py-10">
+            <p class="text-gray-600 text-sm md:text-base mb-8">
+                Taskflow brings clarity to you workflow through planning, so you can focus on the most important.
+            </p>
+
+            <!-- Get Started Button -->
+            <a href="#" class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-medium text-sm px-6 py-2.5 rounded shadow transition duration-200 mb-12">
+                Get Started
+            </a>
+
+            <!-- Why Choose Taskflow Section -->
+            <h3 class="text-lg font-bold text-gray-900 mb-4">
+                Why Choose Taskflow
+            </h3>
+
+            <ul class="space-y-4 text-sm text-gray-700">
+                <li>
+                    <span class="font-bold text-gray-900">• Manages Task</span><br>
+                    <span class="text-gray-600">Create and organize task with due dates.</span>
+                </li>
+                <li>
+                    <span class="font-bold text-gray-900">• Team Collaboration</span><br>
+                    <span class="text-gray-600">Shares projects, tracks progress and promote team work.</span>
+                </li>
+                <li>
+                    <span class="font-bold text-gray-900">• Reminders</span><br>
+                    <span class="text-gray-600">Gets instant notifications and task updates.</span>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-4 px-8 text-xs text-gray-500 border-t border-gray-200">
+        &copy;Taskflow. All rights Reserved.
+    </footer>
+
+</body>
 </html>

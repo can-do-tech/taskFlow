@@ -1,198 +1,369 @@
-body{
-    background: rgba(220, 239, 249, 0.705);
+body {
+  background: rgba(220, 239, 249, 0.705);
 }
-.taskflow{
-    color: blue;
+.taskflow {
+  color: blue;
 }
-header{
-    background: rgba(216, 238, 247, 0.664);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 0 0 2px black;
-    margin: 0 15px;
+header {
+  background: rgba(216, 238, 247, 0.664);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 0 2px black;
+  margin: 0 15px;
 }
-nav{
-    display: flex;
-    gap: 60px;   
+nav {
+  display: flex;
+  gap: 60px;
 }
-nav a{
-    color: rgb(38, 1, 1);
-    text-decoration: none;
+nav a {
+  color: rgb(38, 1, 1);
+  text-decoration: none;
 }
-nav a.active{
-    font-size: 17px;
-    font-weight: bold;
-    color: blue;
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    text-decoration-thickness: 3px;
+nav a.active {
+  font-size: 17px;
+  font-weight: bold;
+  color: blue;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 3px;
 }
-form{
-    background: white;
-    padding: 30px;
-    width: 35%;
-    margin:  10px auto;
-    border-radius: 15px;
-    box-shadow: 0 2px 8px black;
+form {
+  background: white;
+  padding: 30px;
+  width: 35%;
+  margin: 10px auto;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px black;
 }
-form h2{
-    text-align: center;
-    color: rgb(3, 3, 85);
-    margin-bottom: 5px;
+form h2 {
+  text-align: center;
+  color: rgb(3, 3, 85);
+  margin-bottom: 5px;
 }
-form p{
-     text-align: center;
-     color: rgb(3, 3, 85);
-     margin-bottom: 5px;
+form p {
+  text-align: center;
+  color: rgb(3, 3, 85);
+  margin-bottom: 5px;
 }
-label{
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: rgb(3, 3, 85);
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: rgb(3, 3, 85);
 }
-input[type = "text"],
-input[type = "email"],
-input[type = "password"]{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: 15px;
-    outline: none;
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
 }
-input[type = "submit"]{
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    background: blue;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background: blue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }
-input[type = "submit"]:hover{
-    background: rgb(3, 201, 3);
+input[type="submit"]:hover {
+  background: rgb(3, 201, 3);
 }
-.already{
-    color: blue;
-    text-decoration: none;
-    font-weight: bold;
+.already {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
 }
-.dashboard-task{
-    margin: 0 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.dashboard-task {
+  margin: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.new-task{
-     width: 70px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: blue;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
+.new-task {
+  width: 70px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: blue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
 }
-.new-task:hover{
-    background: rgb(3, 201, 3);
+.new-task:hover {
+  background: rgb(3, 201, 3);
 }
-.task-overview{
-    background: rgba(195, 234, 249, 0.664);
-    padding: 0  60px;
-    margin: 0 15px;
-    gap: 30%;
-    display: flex;
-    margin-top: 0;
-    border-radius: 8px;
-    box-shadow: 0 0 1px black;
+.task-overview {
+  background: rgba(195, 234, 249, 0.664);
+  padding: 0 60px;
+  margin: 0 15px;
+  gap: 30%;
+  display: flex;
+  margin-top: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 1px black;
 }
-.strong{
-    text-align: center;
-    font-size: 25px;
-    padding: 0;
-    margin: 1px;
+.strong {
+  text-align: center;
+  font-size: 25px;
+  padding: 0;
+  margin: 1px;
 }
-.task-list{
-    background: white;
-    margin: 15px;
-    padding: 5px;
-    border-radius: 8px;
+.task-list {
+  background: white;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 8px;
 }
-.task-list ul li{
-    list-style: none;
-    padding-left:20px;
-    margin: 15px 0;
-    font-size: 18px;
-}
-
-.task-list ul li::before{
-    content: "";
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border: 2px solid black;
-    margin-right: 5px;
-}
-.task-list ul li.task-completed::before{
-    content: "✔️";
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
-    background: blue;
-    color: white;
-    border: 1px solid black;
-    text-align: center;
-    line-height: 15px;
-    font-weight: bold;
-    font-size: 14px; 
-    vertical-align: middle;  
-    box-sizing: border-box;
-}
-.task-completed{
-    text-decoration: line-through;
-    color: gray
-}
-h1{
-    color: rgb(1, 1, 53);
-
-}
-.hero{
-    position: relative;
-    overflow: hidden;
-    min-height: 200px;
-    background: linear-gradient(135deg, rgb(234, 247, 253),rgb(197, 234, 248));
-    padding: 8px 8% 40px;
+.task-list ul li {
+  list-style: none;
+  padding-left: 20px;
+  margin: 15px 0;
+  font-size: 18px;
 }
 
-.why-taskflow{
-   margin-left: 70px;
-   color: rgb(25, 25, 55);
+.task-list ul li::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid black;
+  margin-right: 5px;
 }
-.get-started{
-    text-decoration: none;
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: blue;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
+.task-list ul li.task-completed::before {
+  content: "✔️";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  background: blue;
+  color: white;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  vertical-align: middle;
+  box-sizing: border-box;
 }
-.get-started:hover{
-    background: rgb(3, 201, 3);
+.task-completed {
+  text-decoration: line-through;
+  color: gray;
+}
+h1 {
+  color: rgb(1, 1, 53);
+}
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 200px;
+  background: linear-gradient(135deg, rgb(234, 247, 253), rgb(197, 234, 248));
+  padding: 8px 8% 40px;
 }
 
+.why-taskflow {
+  margin-left: 70px;
+  color: rgb(25, 25, 55);
+}
+.get-started {
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: blue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.get-started:hover {
+  background: rgb(3, 201, 3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #e6f3f8;
+  color: #0a1931;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+a {
+  color: #0a1931;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 5%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #d0e4ee;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: blue;
+}
+nav {
+  display: flex;
+  gap: 18px;
+}
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a.active {
+  color: blue;
+  font-weight: 700;
+  border-bottom: 3px solid blue;
+}
+
+/* Index */
+.hero {
+  padding: 60px 8%;
+  background: linear-gradient(135deg, #d6eef8 0%, #c1e6f3 100%);
+}
+.hero h1 {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  max-width: 600px;
+}
+.hero h1 span {
+  color: blue;
+}
+.hero p {
+  max-width: 600px;
+  margin: 15px 0;
+}
+.btn {
+  background: blue;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.why {
+  padding: 40px 8%;
+}
+.why ul {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+/* Forms - Login & Signup */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
+.form-card {
+  background: white;
+  width: 100%;
+  max-width: 480px;
+  padding: 35px 28px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.form-card h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.form-card .sub {
+  text-align: center;
+  margin-bottom: 25px;
+  opacity: 0.8;
+}
+.form-card label {
+  display: block;
+  font-weight: 700;
+  margin: 18px 0 8px;
+}
+.form-card input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1.5px solid #333;
+  border-radius: 8px;
+}
+.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0;
+}
+.form-card button {
+  width: 100px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  cursor: pointer;
+  background: #f1f1f1;
+}
+.form-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* Dashboard */
+.dashboard-main {
+  padding: 20px 5%;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+.stat {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+.task-list {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 700px) {
+  header {
+    padding: 16px 8%;
+  }
+  .dashboard-main {
+    padding: 30px 8%;
+  }
+}

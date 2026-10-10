@@ -1,33 +1,58 @@
 <!doctype html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width">
     <title>Dashboard.html</title>
-    <link rel="stylesheet" href="style.css" />
+    <!--<link rel="stylesheet" href="style.css" />-->
+  <link rel="stylesheet" href="./output.css">
   </head>
   <body>
-    <a href="Dashboard.html">TaskFlow</a>
-    <span style="float: Right">
-      <a href="index.html">Home</a>
-      <a href="dashboard.html">Dashboard</a>
-      <a href="login.html">Logout</a>
-    </span>
-    <h1>Your Tasks</h1>
-    <p>Here's is an overview of your tasks.</p>
-    <p><strong>5 Total Tasks</strong></p>
-    <p><strong>2 Completed</strong></p>
-    <p><strong>3 Pending</strong></p>
+    
+    <body class="bg-[#eef5fc] text-slate-900 font-sans p-4 sm:p-8 flex flex-col min-h-screen">
 
-    <h2>Task List</h2>
-    <ul>
-      <li>Complete HTML assignment</li>
-      <li>Read Java Script Notes</li>
-      <li>Build TaskFlow Project</li>
-      <li>Go for a walk</li>
-      <li>Plan next week</li>
-    </ul>
-    <a href="Add a New Task">Add a New Task</a>
-    <p>
-      &copy; 2026 TaskFlow. All right Reserved By<strong> Mr.Can-Do.</strong>
-    </p>
-  </body>
+    <!-- Top Navigation -->
+    <div class="flex justify-between items-center mb-6">
+        <a href="#" class="underline text-slate-900 font-medium">TaskFlow</a>
+        <div class="space-x-4">
+            <a href="home.html" class="underline text-slate-900">Home</a>
+            <a href="dashboard.html" class="underline text-slate-900">Dashboard</a>
+            <a href="logout.html" class="underline text-slate-900">Logout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Header & Overview -->
+        <h1 class="text-3xl font-bold tracking-tight mb-2">Your Tasks</h1>
+        <p class="text-slate-700 mb-4">Here's is an overview of your tasks.</p>
+
+        <!-- Stats -->
+        <div class="space-y-1 mb-6 font-medium">
+            <div class="text-slate-900">5 Total Tasks</div>
+            <div class="text-slate-900">2 Completed</div>
+            <div class="text-slate-900">3 Pending</div>
+        </div>
+
+        <!-- Task List Section -->
+        <h2 class="text-xl font-bold mb-2">Task List</h2>
+        <ul class="space-y-1 mb-6 text-slate-900">
+            <li>Complete HTML assignment</li>
+            <li>Read Java Script Notes</li>
+            <li>Build TaskFlow Project</li>
+            <li>Go for a walk</li>
+            <li>Plan next week</li>
+        </ul>
+
+        <!-- Add Task Link -->
+        <div class="mb-12">
+            <a href="add-task.html" class="underline text-slate-900">Add a New Task</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-slate-900 text-sm mt-auto">
+        &copy; 2026 TaskFlow. All right Reserved By <strong>Mr.Can-Do</strong>.
+    </footer>
+
+</body>
 </html>
